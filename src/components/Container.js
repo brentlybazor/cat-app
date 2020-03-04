@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from '../logo.svg';
+// import './App.css';
 
 function Container() {
   return (
@@ -15,7 +15,7 @@ function Container() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React here
         </a>
     </div>
   );
