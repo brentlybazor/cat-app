@@ -1,14 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Container from './components/Container.js'
-import ContainerKB from './components/ContainerKB'
+import CatImageContainer from './components/CatImageContainer'
 
 function App() {
   return (
     <>
-      <Container />
-      <Container />
+      <CatImageContainer />
     </>
   );
 }
