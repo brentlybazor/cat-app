@@ -16,9 +16,9 @@ function DogImageContainer() {
   }
 
   return (
-    <div className="App">
+    <div>
         <img src={data.message} className="catImg border" alt="logo" />
-        <p>
+        <p className="imgDescription">
           This is dog
         </p>
         <button onClick={getData}>

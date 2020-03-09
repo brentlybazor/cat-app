@@ -15,9 +15,9 @@ function CatImageContainer() {
   }
 
   return (
-    <div className="App">
+    <div>
         <img src={catData.url} className="catImg" alt="logo" />
-        <p>
+        <p className="imgDescription">
           This is cat
         </p>
         <button onClick={getData}>

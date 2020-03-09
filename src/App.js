@@ -6,10 +6,10 @@ import DogImageContainer from './components/DogImageContainer'
 
 function App() {
   return (
-    <>
+    <div className="App">
       <CatImageContainer />
       <DogImageContainer />
-    </>
+    </div>
   );
 }
 
