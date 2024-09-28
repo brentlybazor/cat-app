@@ -1,11 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from '../logo.svg';
 // import './App.css';
 
 function Container() {
+
+  const [catData, setCatData] = useState([]);
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  const getData = async () => {
+    const response = await fetch(`https://api.thecatapi.com/v1/images/search`);
+    const data = await response.json();
+    console.log(data);
+    setCatData(data[0])
+  }
+
+  // https://api.thecatapi.com/v1/images/search
+
+  console.log(catData);
   return (
     <div className="App">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={catData.url} className="catImg" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>

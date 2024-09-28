@@ -1,11 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Container from './components/Container.js'
+import CatImageContainer from './components/CatImageContainer'
+import DogImageContainer from './components/DogImageContainer'
+import PostViewer from './components/PostViewer'
 
 function App() {
   return (
-    <Container />
+    <div className="App">
+      <PostViewer />
+      <CatImageContainer />
+      <DogImageContainer />
+    </div>
   );
 }
 
